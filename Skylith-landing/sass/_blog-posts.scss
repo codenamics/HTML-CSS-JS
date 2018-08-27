@@ -1,0 +1,45 @@
+    .blog__posts {
+        background: #fafafa;
+        padding: 100px 0;
+        text-align: center;
+        h4 {
+            font-family: 'Playfair Display';
+            font-size: 38px;
+            font-weight: bold;
+        }
+        p {
+            font-family: 'Work sans';
+            font-size: 14px;
+            max-width: 690px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+        .post__carousel-post {
+            height: 430px;
+            width: 370px;
+            padding: 25px;
+            img {
+                width: 100%;
+            }
+        }
+        .post-feed {
+            background: #fff;
+            text-align: left;
+            padding: 30px;
+            h5 {
+                font-family: 'Playfair Display';
+                font-size: 20px;
+                font-weight: bold;
+            }
+            p {
+                font-family: 'Work sans';
+                font-size: 15px;
+                padding: 10px 0 0 0;
+            }
+        }
+        .slick-dots li button:before {
+            font-size: 20px;
+            line-height: 20px;
+            color: black
+        }
+    }

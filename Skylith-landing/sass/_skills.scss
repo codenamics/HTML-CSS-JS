@@ -1,0 +1,35 @@
+.skills {
+    overflow-x: hidden;
+    max-width: 100%;
+    &__one {
+        padding: 100px 35px;
+    }
+    &__two {
+        background: url(../img/pexels-photo-755822.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__title {
+        font-size: 13px;
+        font-family: "Montserrat";
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        line-height: 2.308;
+        font-weight: 700;
+    }
+    h4 {
+        font-size: 30px;
+        font-family: "Montserrat";
+        color: rgb(23, 23, 23);
+        line-height: 2.8;
+    }
+}
+
+.progress {
+    background-color: rgb(216, 216, 216);
+    height: 3px;
+    &-bar {
+        background-color: rgb(23, 23, 23);
+    }
+}

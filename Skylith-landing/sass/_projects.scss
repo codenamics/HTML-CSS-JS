@@ -1,0 +1,64 @@
+.projects {
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
+    &__img {
+        padding: 0;
+        &:hover .img-cover {
+            opacity: 1;
+        }
+        &:hover .img-cover-title {
+            transform: translateY(-10px);
+            opacity: 1;
+        }
+    }
+    &__load {
+        width: 100%;
+        background-color: rgb(235, 235, 235);
+        height: 85px;
+        cursor: pointer;
+        transition: all .5s;
+        span {
+            font-size: 13px;
+            font-family: "Montserrat";
+            color: rgb(130, 130, 130);
+            text-transform: uppercase;
+            line-height: 1.846;
+            font-weight: 700;
+        }
+        &:hover {
+            background-color: #ef070f;
+            span {
+                color: #fff
+            }
+        }
+    }
+}
+
+.img-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(233, 10, 10, 0.5);
+    opacity: 0;
+    transition: all .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    &-title {
+        font-size: 24;
+        font-weight: bold;
+        font-family: 'Playfair Display';
+        opacity: 0;
+        transition: transform .4s .2s, opacity .4s .2s
+    }
+    &-desc {
+        font-size: 14px;
+        font-family: 'Work sans';
+        text-transform: uppercase;
+    }
+}

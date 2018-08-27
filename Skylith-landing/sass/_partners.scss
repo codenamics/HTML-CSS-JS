@@ -1,0 +1,24 @@
+.partners {
+    text-align: center;
+    .container {
+        padding: 40px 0 !important;
+    }
+    img {
+        margin: 0 25px;
+    }
+    &-heading {
+        font-size: 30px;
+        font-family: "Montserrat";
+        color: rgb(14, 14, 14);
+        line-height: 1.333;
+    }
+    &-text {
+        font-size: 15px;
+        font-family: "Work Sans";
+        color: rgb(95, 95, 95);
+        line-height: 1.6;
+        font-weight: medium;
+        max-width: 500px;
+        margin: 20px auto 45px auto
+    }
+}

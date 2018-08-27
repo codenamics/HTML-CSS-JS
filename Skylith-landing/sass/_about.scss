@@ -1,0 +1,19 @@
+.about {
+    padding: 100px 0;
+    text-align: center;
+    &__text {
+        font-family: 'Playfair Display';
+        font-weight: 500;
+        font-style: italic;
+        font-size: 24px;
+    }
+    &__download {
+        color: #eb0100;
+        font-size: 13px;
+        background: transparent;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 2.923;
+    }
+}

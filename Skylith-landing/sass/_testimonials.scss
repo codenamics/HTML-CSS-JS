@@ -1,0 +1,26 @@
+        .testimonials {
+            color: #fff;
+            padding: 120px 0 100px 0;
+            background: url(../img/bg-pattern.jpg);
+            text-align: center;
+            .slick-dots li button:before {
+                font-size: 20px;
+                line-height: 20px;
+            }
+            &-secondary {
+                font-size: 14px;
+                font-family: 'Work Sans';
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 6px;
+            }
+            &-primary {
+                font-size: 48px;
+                font-family: 'Playfair Display';
+                font-weight: 700;
+                line-height: 1.4;
+            }
+            .w_400 {
+                font-weight: 400;
+            }
+        }
