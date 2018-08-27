@@ -1,0 +1,40 @@
+.footer {
+    background-color: rgb(42, 33, 29);
+    padding: 100px 0 100px 0;
+    z-index: 1000;
+    &__grid {
+        display: grid;
+        color: #fff;
+        grid-template-columns: 200px repeat(auto-fit, minmax(100px, 1fr));
+        @media (max-width: 1000px) {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+    &__col {
+        font-family: 'Open Sans', sans-serif;
+        @media (max-width: 800px) {
+            text-align: center;
+        }
+        h5 {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        ul {
+            padding: 0;
+        }
+        ul li {
+            text-decoration: none;
+            list-style: none;
+            font-size: 15px;
+            padding: 15px 0;
+        }
+        &-logo {
+            @media (max-width: 1000px) {
+                display: none;
+            }
+        }
+    }
+}

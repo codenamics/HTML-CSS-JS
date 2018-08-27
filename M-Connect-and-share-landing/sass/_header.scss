@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans serif';
+    box-sizing: border-box;
+}
+
+.header {
+    background: url(../img/header.png);
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        @media(max-width: 550px) {
+            display: none;
+        }
+        li {
+            list-style: none;
+            margin-top: 60px;
+            text-transform: uppercase;
+            font-family: 'Roboto', 'sans serif';
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+    .heading {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        @media(max-width: 1000px) {
+            top: 43%;
+        }
+        @media(max-width:550px) {
+            top: 45%;
+        }
+        &__primary {
+            font-size: 65px;
+            font-family: 'Roboto';
+            padding: 0 25px;
+            color: #fff;
+            max-width: 846px;
+            text-align: center;
+            font-weight: 900;
+            -webkit-text-shadow: 0px 17px 43px rgba(255, 112, 9, 0.937);
+            -moz-text-shadow: 0px 17px 43px rgba(255, 112, 9, 0.937);
+            text-shadow: 0px 17px 43px rgba(255, 112, 9, 0.937);
+            line-height: 1.169;
+            @media (max-width: 600px) {
+                font-size: 45px;
+            }
+        }
+        &__img {
+            position: absolute;
+            bottom: 0;
+            left: 51%;
+            margin-right: -50%;
+            transform: translate(-50%, 0%);
+            max-width: 90%;
+            height: auto;
+            @media(max-width: 550px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.btn {
+    min-width: 242px;
+    min-height: 42px;
+    margin-top: 43px;
+    background: #fff;
+    border-radius: 23px;
+    border: none;
+    color: #fa5a01;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 17px 43px rgb(255, 60, 1);
+    -moz-box-shadow: 0px 17px 43px rgb(255, 60, 1);
+    box-shadow: 0px 17px 43px rgb(255, 60, 1);
+}
