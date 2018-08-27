@@ -1,0 +1,35 @@
+.header {
+    grid-column: full-start/full-end;
+    background: linear-gradient(rgba($color-black, $alpha: 0.75), rgba($color-black, $alpha: 0.75)), url(../img/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    .headings {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        &__heading-primary {
+            text-align: center;
+            font-size: 5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        &__heading-secondary {
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            margin-top: 35px;
+        }
+        .divider-line {
+            margin: 0 auto;
+            width: 111px;
+            border: 1px solid rgb(53, 194, 248);
+            display: inline-block;
+        }
+    }
+}

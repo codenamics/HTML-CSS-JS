@@ -1,0 +1,43 @@
+// COLOR VARIABLES
+$color-white: #fff;
+$color-black:#000;
+$color-font:#777777;
+// FONT VARIABLES
+$font-primary: 'Montserrat',
+sans-serif;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-white;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-rows: minmax(64.4rem, 80vh) repeat(6, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem)[col-end])[center-end] minmax(6rem, 1fr)[full-end];
+}
+
+.container-box {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    @media (max-width: 900px) {
+        width: 98%;
+    }
+}

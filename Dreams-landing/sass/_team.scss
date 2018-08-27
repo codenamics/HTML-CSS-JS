@@ -1,0 +1,50 @@
+.team {
+    padding: 100px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #222222;
+    &__heading {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    &__members {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 25px;
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr
+        }
+    }
+    &__member {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        img {
+            max-width: 70%;
+        }
+        .name {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 5px 0 0 0;
+        }
+        .position {
+            font-size: 14px;
+            margin: 0 0 5px 0;
+        }
+        .fa-facebook-square,
+        .fa-twitter-square,
+        .fa-pinterest-square {
+            font-size: 25px !important;
+        }
+        .fa-twitter-square {
+            margin: 0 5px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.portfolio {
+    display: grid;
+    grid-column: 1/-1;
+    color: $color-black;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+    justify-items: end;
+    margin: 100px 0;
+    h2 {
+        font-size: 40px;
+        color: #222222;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__content {
+        display: grid;
+        padding: 0 7vw;
+        grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+        background: url(../img/Background-Users-Icon.png);
+        background-repeat: no-repeat;
+        background-size: 650px auto;
+        background-position: 70% 80%;
+        z-index: 100;
+        &-rows {
+            margin: 25px 0;
+        }
+        &-row {
+            display: grid;
+            grid-template-columns: min-content;
+            grid-column-gap: 15px;
+            margin: 25px 0;
+            h5 {
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                align-items: start;
+                margin: 0;
+            }
+            p {
+                grid-column: 2/3;
+                font-size: 14px;
+                color: $color-font;
+            }
+        }
+        &-text {
+            color: $color-font;
+            font-size: 14px;
+            margin: 20px 0;
+        }
+    }
+    &__photo {
+        @media(max-width: 900px) {
+            display: none;
+        }
+    }
+}
