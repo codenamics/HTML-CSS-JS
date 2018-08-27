@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo</title>
+</head>
+
+<body class="body" id="body">
+
+    <div class="main">
+        <div class="head">
+            <span class="date">21 January 2018</span>
+            <button class="btn-modal" id="btn-modal"><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="content">
+            <input type="text" class="filter" id="filter" placeholder="Filter items">
+            <div class="items-content">
+                <ul class="items" id="items">
+                    
+
+                </ul>
+            </div>
+        </div>
+        <button class="btn-clear" id="clear-tasks">Clear all tasks</button>
+
+    </div>
+    <div class="modal-add-wrapper" id="modal-add-wrapper">
+        <div class="modal-add" id="modal-add">
+            <input type="text" class="task" id="task" placeholder="Add your task">
+            <button class="add-task" id="add-task">Add task</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
