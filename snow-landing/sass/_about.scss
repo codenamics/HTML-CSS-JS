@@ -1,0 +1,17 @@
+.about {
+    padding: 90px 0 100px 0;
+    text-align: center;
+    &__container {
+        max-width: 744px;
+        width: 90%;
+        margin: 0 auto;
+        &-heading {
+            font-family: 'Playfair Display';
+            font-size: 38px;
+            font-weight: bold;
+        }
+        &-text {
+            margin: 40px 0;
+        }
+    }
+}

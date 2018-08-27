@@ -1,0 +1,30 @@
+.post-head {
+    background: url(../img/portfolio-4-video-thumb.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.post {
+    padding: 100px 0 50px 0;
+    background: #f6f6f6;
+    &__heading {
+        font-family: 'Playfair Display';
+        font-size: 38px;
+        font-weight: bold;
+        color: #171717;
+    }
+    &__text {
+        color: #5f5f5f;
+        font-size: 15px;
+        &--italic {
+            font-style: italic;
+            font-size: 18px;
+        }
+    }
+}
+
+.comments {
+    background: #f6f6f6;
+}

@@ -1,0 +1,12 @@
+@keyframes zoom-in {
+    0% {
+        transform: translateY(-55px);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.is-animated {
+    animation: .6s zoom-in;
+}

@@ -1,0 +1,42 @@
+.navbar {
+    padding: 25px 0;
+    z-index: 100000;
+}
+
+.nav-toogle {
+    background: transparent;
+    width: 100%;
+    z-index: 1000;
+    transition: all .5s ease-in-out;
+}
+
+.navbar-nav li {
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #fff;
+    font-family: 'Work Sans';
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.logo-img {
+    width: 85px;
+    height: auto;
+}
+
+.pad-t-nav {
+    padding: 33px 0;
+}
+
+.nav-white {
+    background: #fff !important;
+    li a {
+        color: #000 !important;
+    }
+}

@@ -1,0 +1,28 @@
+.portfolio__main {
+    background: #f6f6f6;
+    padding: 100px 0;
+    min-height: 1000px;
+    &-categories {
+        margin-top: 50px;
+        img {
+            margin: 0 auto;
+            transform: translateY(25px);
+        }
+    }
+    .mansory {
+        padding-top: 50px;
+    }
+}
+
+.load-more {
+    background: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 50px 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1d1d1d;
+    font-family: 'Work sans';
+    font-weight: 600
+}

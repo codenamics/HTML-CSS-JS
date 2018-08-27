@@ -1,0 +1,43 @@
+.counter {
+    background: url(../img/bg-pattern.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 100px 0 120px 0;
+    @media(max-width: 1199px) {
+        .col-lg-3 {
+            padding: 0;
+        }
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        @media(max-width: 991px) {
+            text-align: center;
+        }
+        &-heading,
+        &-text {
+            margin: 0;
+            font-weight: 500;
+            font-family: 'Work Sans';
+            text-transform: uppercase;
+        }
+        &-heading {
+            font-size: 18px;
+            margin-bottom: 10px;
+            @media(max-width: 991px) {
+                margin: 20px 0 10px 0;
+            }
+        }
+        &-text {
+            font-size: 14px;
+        }
+    }
+    img {
+        margin-right: 30px;
+        @media(max-width: 991px) {
+            margin-right: 0;
+        }
+    }
+}

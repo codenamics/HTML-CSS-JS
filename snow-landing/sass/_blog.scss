@@ -1,0 +1,24 @@
+.mansory__blog {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  // @media(max-width:786px){
+  //     -moz-column-count: 3;
+  //     -webkit-column-count: ;
+  //     column-count: 1;
+  // }
+  &-post {
+    max-height: 800px;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .post-text {
+    padding: 30px;
+    background: #fff;
+    text-align: left;
+  }
+}

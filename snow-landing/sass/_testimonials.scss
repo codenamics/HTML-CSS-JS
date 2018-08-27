@@ -1,0 +1,13 @@
+        .testimonials {
+            color: #fff;
+            padding: 120px 0 100px 0;
+            background: url(../img/bg-pattern.jpg);
+            .header__hero-secondary,
+            .header__hero-primary {
+                text-align: center;
+            }
+            .slick-dots li button:before {
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }

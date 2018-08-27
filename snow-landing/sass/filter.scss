@@ -1,0 +1,24 @@
+#filter {
+    z-index: 999;
+    cursor: pointer;
+}
+
+.filter__categories {
+    ul li {
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    transition: all .5s;
+}
+
+.filter-active {
+    margin-top: 55px;
+    opacity: 1;
+}
+
+.filter-inactive {
+    margin-top: 0px;
+    opacity: 0;
+}
