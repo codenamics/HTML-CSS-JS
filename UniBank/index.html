@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <title>UniBank</title>
+</head>
+
+<body class="container">
+    <div class="sidebar">
+        <ul class="sidebar__menu">
+            <li>
+                <img src="img/dash.png" class="logo">
+                <span>Dashboard</span>
+            </li>
+            <li>
+                <img src="img/Page1.png" class="logo">
+                <span>Accounts</span>
+            </li>
+            <li>
+                <img src="img/Oszczednosci.png" class="logo">
+                <span>Savings</span>
+            </li>
+            <li>
+                <img src="img/cards.png" class="logo">
+                <span>Cards</span>
+            </li>
+            <li>
+                <img src="img/ic_pay.png" class="logo">
+                <span>Loans</span>
+            </li>
+            <li>
+                <img src="img/inv.png" class="logo">
+                <span>Investments</span>
+            </li>
+            <li>
+                <img src="img/cont.png" class="logo">
+                <span>Contracts</span>
+            </li>
+        </ul>
+    </div>
+    <div class="nav">
+        <div class="nav__logo">
+            <img src="img/logo.png" class="nav__logo-logo">
+            <span class="nav__logo-line"></span>
+        </div>
+        <div class="nav__content">
+            <input type="text" class="search" placeholder="Search...">
+            <ul class="nav__content-items">
+                <li>
+                    <a href="http://" class="btn-transfer ">MONEY TRANSFER</a>
+                </li>
+                <li>
+                    <span class="name">Hello,
+                        <strong>Tomek</strong>
+                    </span>
+                </li>
+                <li class="user">
+                    <img src="img/Bitmap.png" alt="" class="user-icon">
+                    <div class="user-circle"></div>
+                </li>
+                <li class="mess">
+                    <img src="img/talk.png" alt="">
+                    <div class="mess-circle">1</div>
+                </li>
+                <li>
+                    <span class="logout ">Logout</span>
+                </li>
+                <li>
+                    <a href="http://">
+                        <img src="img/logout.png" alt="" srcset="" class="logout-icon ">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main__top">
+            <div class="main__top-left">
+                <span class="main__top-left--1">Dashboard</span>
+                <span class="main__top-left--2">You are in main panel</span>
+            </div>
+            <button class="main__top-btn btn-hover">+ ADD MODULES</button>
+        </div>
+        <div class="main__one">
+            <div class="flex-one">
+                <span class="summary">Summary</span>
+                <span class="balance">Balance</span>
+                <span class="money">
+                    <span class="dot"></span>10 346,78 PLN</span>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="chart"></canvas>
+            </div>
+            <button class="btn-one btn-hover">more details</button>
+        </div>
+        <div class="main__two">
+            <div class="main__two-top">
+                <span>Your cards</span>
+                <div id="myDropdown"></div>
+            </div>
+            <div class="main__two-mid--left">
+                <h4>Tomasz Kowalski</h4>
+
+                <hr>
+                <ul class="left">
+                    <li>
+                        <span>Card:</span>
+                        <span class="grey">Debit</span>
+                    </li>
+                    <li>
+                        <span>Card type:</span>
+                        <span class="grey">Debit MasterCard PayPass</span>
+                    </li>
+                    <li>
+                        <span>Account</span>
+                        <span class="savings grey">Savings Account
+                            <br> 68 4434 5567 0000 7000 5462 6789</span>
+                    </li>
+
+                    <li>
+                        <span>Card number:</span>
+                        <span class="grey">6876 76** **** 0789</span>
+                    </li>
+                    <li>
+                        <span>Expiry date:</span>
+                        <span class="grey">31.03.2019</span>
+                    </li>
+                    <li>
+                        <span>Status:</span>
+                        <span class="green">Active</span>
+                    </li>
+                    <li>
+                        <span>Blocked:</span>
+                        <span class="grey">743,00 PLN</span>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div>
+                <img src="img/KARTA.png" alt="" class="card card-hover">
+            </div>
+            <div class="main__two-bottom">
+                <button class="a btn-hover">More details</button>
+                <span class="b">
+                    <button class="c btn-hover">WITHHOLD CARD</button>
+                    <button class="d btn-hover">CHANGE PIN</button>
+                </span>
+            </div>
+        </div>
+        <div class="main-three">
+            <div class="main-three-top">
+                <span class="history">History</span>
+                <div class="
+                left">
+                    <span class="left-1">Today</span>
+                    <span>Yesterday</span>
+                </div>
+            </div>
+            <div class="list-wrapper">
+                <ul>
+                    <li>
+                        <div class="pay">
+                            <img src="img/start.png" alt="" class="logo">
+                            <div class="address">
+                                <span>
+                                    <img src="img/arrow.png" alt="" class="arrow"> 16,00 PLN</span>
+                                <span>Caffee Latte - Starbucks</span>
+                                <span>Aleja Jana Pawła II 89</span>
+                            </div>
+                        </div>
+                        <span>15:00</span>
+                    </li>
+                    <li>
+                        <div class="pay">
+                            <img src="img/net.png" alt="" class="logo">
+                            <div class="address">
+                                <span>
+                                    <img src="img/arrow.png" alt="" class="arrow"> 550,00 PLN</span>
+                                <span>Caffee Latte - Starbucks</span>
+                                <span>Aleja Jana Pawła II 89</span>
+                            </div>
+                        </div>
+                        <span>14:45</span>
+                    </li>
+                    <li>
+                        <div class="pay">
+                            <img src="img/cyf.png" alt="" class="logo">
+                            <div class="address">
+                                <span>
+                                    <img src="img/arrowup.png" alt="" class="arrow"> 6400,00 PLN</span>
+                                <span>Caffee Latte - Starbucks</span>
+                                <span>Aleja Jana Pawła II 89</span>
+                            </div>
+                        </div>
+                        <span>13:10</span>
+                    </li>
+                    <li>
+                        <div class="pay">
+                            <img src="img/ff.png" alt="" class="logo">
+                            <div class="address">
+                                <span>
+                                    <img src="img/arrow.png" alt="" class="arrow"> 350,00 PLN</span>
+                                <span>Caffee Latte - Starbucks</span>
+                                <span>Aleja Jana Pawła II 89</span>
+                            </div>
+                        </div>
+                        <span>11:45</span>
+                    </li>
+                    <li>
+                        <div class="pay">
+                            <img src="img/app.png" alt="" class="logo">
+                            <div class="address">
+                                <span>
+                                    <img src="img/arrow.png" alt="" class="arrow"> 600,00 PLN</span>
+                                <span>Caffee Latte - Starbucks</span>
+                                <span>Aleja Jana Pawła II 89</span>
+                            </div>
+                        </div>
+                        <span>9:30</span>
+                    </li>
+                    <li>
+                        <div class="pay">
+                            <img src="img/app.png" alt="" class="logo">
+                            <div class="address">
+                                <span>
+                                    <img src="img/arrow.png" alt="" class="arrow"> 600,00 PLN</span>
+                                <span>Caffee Latte - Starbucks</span>
+                                <span>Aleja Jana Pawła II 89</span>
+                            </div>
+                        </div>
+                        <span>9:30</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-three-bottom">
+                <button class="stats-btn btn-hover">More Details</button>
+            </div>
+        </div>
+        <div class="main-four">
+            <div class="main-three-top">
+                <span class="history">Charges</span>
+                <div class="
+                left">
+                    <span class="left-1">Week</span>
+                    <span>Month</span>
+                </div>
+            </div>
+            <div class="donut">
+                <canvas id="donut"></canvas>
+            </div>
+            <div class="stats">
+                <div class="stat stat-1">
+                    <div class="per">
+                        <span class="one">31%</span>
+                        <span class="two">Food</span>
+                    </div>
+
+                    <div class="line">
+                        <div class="line-on line-on-1"></div>
+                    </div>
+                </div>
+                <div class="stat stat-1">
+                    <div class="per">
+                        <span class="one">73%</span>
+                        <span class="two">Food</span>
+                    </div>
+
+                    <div class="line">
+                        <div class="line-on line-on-2"></div>
+                    </div>
+                </div>
+                <div class="stat stat-1">
+                    <div class="per">
+                        <span class="one">21%</span>
+                        <span class="two">Food</span>
+                    </div>
+
+                    <div class="line">
+                        <div class="line-on line-on-3"></div>
+                    </div>
+                </div>
+                <div class="stat stat-1">
+                    <div class="per">
+                        <span class="one">40%</span>
+                        <span class="two">Food</span>
+                    </div>
+
+                    <div class="line">
+                        <div class="line-on line-on-4"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="stats-btn btn-hover">More Details</button>
+        </div>
+        <div class="main-five">
+            <div class="main-five-top">
+                <span>Messages</span>
+            </div>
+            <div class="main-five-mid">
+                <ul>
+
+                    <li>
+                        <span>
+                            <img src="img/face.png" alt="">
+                        </span>
+                        <div class="text">
+                            <div class="message-top">
+                                <h5>Earn 50,000 bonus miles</h5>
+                                <span>Monika Nowak</span>
+                            </div>
+                            <p>UniBank has just prepared a great offer for all owners of Miles Plus program. You can earn even
+                                50,000 bonus miles! Let me explain...</p>
+                        </div>
+                        <div class="line-hor"></div>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/face.png" alt="">
+                        </span>
+                        <div class="text">
+                            <div class="message-top">
+                                <h5>Earn 50,000 bonus miles</h5>
+                                <span>Monika Nowak</span>
+                            </div>
+                            <p>UniBank has just prepared a great offer for all owners of Miles Plus program. You can earn even
+                                50,000 bonus miles! Let me explain...</p>
+                        </div>
+                        <div class="line-hor"></div>
+                    </li>
+
+                    <li>
+                        <span>
+                            <img src="img/face2.png" alt="">
+                        </span>
+                        <div class="text">
+                            <div class="message-top">
+                                <h5>Your new credit options</h5>
+                                <span>Monika Nowak</span>
+                            </div>
+                            <p>UniBank has just prepared a great offer for all owners of Miles Plus program. You can earn even
+                                50,000 bonus miles! Let me explain...</p>
+                        </div>
+                        <div class="line-hor"></div>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/face1.png" alt="">
+                        </span>
+                        <div class="text">
+                            <div class="message-top">
+                                <h5>New investment options for you</h5>
+                                <span>Monika Nowak</span>
+                            </div>
+                            <p>UniBank has just prepared a great offer for all owners of Miles Plus program. You can earn even
+                                50,000 bonus miles! Let me explain...</p>
+                        </div>
+                        <div class="line-hor"></div>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/face.png" alt="">
+                        </span>
+                        <div class="text">
+                            <div class="message-top">
+                                <h5>New partnership program for you </h5>
+                                <span>Monika Nowak</span>
+                            </div>
+                            <p>UniBank has just prepared a great offer for all owners of Miles Plus program. You can earn even
+                                50,000 bonus miles! Let me explain...</p>
+                        </div>
+                        <div class="line-hor"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="main-five-bottom">
+                <div>
+                    <button class="btn-hover">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

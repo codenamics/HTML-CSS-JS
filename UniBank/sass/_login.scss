@@ -1,0 +1,146 @@
+.login {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    &__left {
+        background-color: rgb(255, 255, 255);
+        padding: 35px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        &-form {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            .form {
+                transform: translateY(-20px);
+                align-items: flex-start;
+                label {
+                    font-size: 14px;
+                    color: #9a96a7;
+                }
+                &__log {
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                    a {
+                        color: #9a96a7;
+                        font-size: 14px;
+                    }
+                    &-btn {
+                        border: none;
+                        border-radius: 23px;
+                        background-color: rgb(57, 44, 112);
+                        box-shadow: 0px 6px 7px 0px rgba(57, 44, 112, 0.18);
+                        width: 120px;
+                        height: 45px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        transition: .5s all;
+                        &:hover {
+                            box-shadow: 0.622px 0.829px 45px 1px #382c70d3;
+                        }
+                    }
+                }
+            }
+            input {
+                border: none;
+                border-bottom: 1px solid rgb(193, 191, 201);
+                max-width: 494.854px;
+                width: 100%;
+                height: 50px;
+                margin-bottom: 25px;
+                padding-left: 10px;
+                outline: none;
+                transition: .3s all;
+                &:focus {
+                    border-bottom: 2px solid rgb(146, 44, 136);
+                    &::placeholder {
+                        color: rgb(146, 44, 136);
+                    }
+                }
+                &::placeholder {
+                    color: #9a96a7;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &__right {
+        background: url(../img/back.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 100px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        &-head {
+            h1 {
+                font-size: 95px;
+                color: rgb(255, 255, 255);
+                line-height: 0.747;
+                text-align: left;
+                font-weight: 300;
+                @media (max-width: 1855px) {
+                    font-size: 75px;
+                }
+                @media (max-width: 1600px) {
+                    font-size: 60px;
+                }
+                span {
+                    font-weight: 600;
+                    display: inline-block;
+                    padding-left: 10px;
+                    @media (max-width: 1311px) {
+                        padding: 35px 0;
+                    }
+                }
+            }
+            .sub-header {
+                font-size: 35px;
+                color: #fff;
+                @media (max-width: 1600px) {
+                    font-size: 30px;
+                }
+            }
+        }
+        &-hotline {
+            position: absolute;
+            bottom: 35px;
+            right: 25px;
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+}
+
+.disclaimer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    p {
+        color: #9a96a7;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        span {
+            color: #4f4e52;
+            font-weight: 500;
+        }
+    }
+    &-btn {
+        border: none;
+        border-radius: 22px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 6px 7px 0px rgba(232, 232, 232, 0.39);
+        width: 105px;
+        height: 45px;
+        cursor: pointer
+    }
+}
