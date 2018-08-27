@@ -1,0 +1,49 @@
+.expectation {
+    padding: 200px 0px;
+    background: #fff;
+    background: url(../img/bg3.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    @media(max-width: 1000px) {
+        padding: 50px 0;
+    }
+    &__grid {
+        grid-row-gap: 55px;
+        align-items: center;
+        align-self: center;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        @media(max-width: 500px) {
+            grid-template-columns: 1fr;
+        }
+        &-1 {
+            text-align: left;
+            max-width: 500px;
+            display: grid;
+            padding: 0 10px;
+            h3 {
+                color: $color-blueish;
+                font-size: 50px;
+                margin-bottom: 12px;
+                @media (max-width: 500px) {
+                    font-size: 30px;
+                }
+            }
+            p {
+                font-size: 18px;
+                color: $color-blueish-lighter;
+                margin: 10px 0;
+            }
+        }
+        &-2 {
+            display: grid;
+            justify-items: end;
+        }
+    }
+}
+
+.mint {
+    max-width: 90%;
+    box-shadow: 0 51px 113px 0 $color-grey-shadow;
+}

@@ -1,0 +1,95 @@
+.btn {
+    border: none;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    &--blue {
+        background-color: $color-blue;
+        &:hover {
+            box-shadow: 0px 5px 14px 0px $color-blue-shadow;
+        }
+    }
+    &--green {
+        background-image: linear-gradient( -135deg, $color-green-1 0%, $color-green-2 100%);
+        &:hover {
+            box-shadow: 0px 5px 14px 0px $color-green-shadow;
+        }
+    }
+    &--darkblue {
+        background-color: $color-blueish;
+        &:hover {
+            opacity: .8;
+            box-shadow: 0px 5px 14px 0px $color-blueish-shadow;
+        }
+    }
+    &__nav {
+        width: 91px;
+        height: 42px;
+    }
+    &__log {
+        width: 110px;
+        height: 52px;
+        margin-left: 20px;
+    }
+    &__head {
+        margin-left: 10px;
+        width: 166px;
+        height: 54px;
+        margin-top: 30px;
+        @media (max-width: 1300px) {
+            width: 145px;
+        }
+        @media (max-width: 1000px) {
+            width: 100%;
+            margin-left: 0;
+            margin: 15px auto 0 auto;
+        }
+    }
+    &__small {
+        font-size: 12px;
+        @media(max-width: 500px) {
+            margin-top: 15px;
+        }
+        &--1 {
+            width: 155px;
+            height: 36px;
+        }
+        &--2 {
+            width: 108px;
+            height: 36px;
+        }
+    }
+    &__mid {
+        width: 170px;
+        height: 52px;
+        &--blue {
+            margin-top: 70px;
+            background-color: $color-blue;
+            &:hover {
+                box-shadow: 0px 5px 14px 0px $color-blue-shadow;
+            }
+        }
+    }
+    &__big {
+        width: 250px;
+        height: 52px;
+        &:hover {
+            opacity: .8;
+            box-shadow: 0px 5px 14px 0px $color-blueish-shadow;
+        }
+    }
+}
+
+.mw-100 {
+    @media (max-width: 500px) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

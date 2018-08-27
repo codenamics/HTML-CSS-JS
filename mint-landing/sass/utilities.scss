@@ -1,0 +1,15 @@
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+}

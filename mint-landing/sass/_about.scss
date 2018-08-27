@@ -1,0 +1,171 @@
+    .about {
+        max-width: 1600px;
+        margin: 0 auto;
+        background: $color-white;
+        padding: 200px 0 0 0;
+        text-align: center;
+        @media (max-width: 1000px) {
+            padding: 100px 10px 0 10px;
+        }
+        h2 {
+            font-size: 52px;
+            color: $color-blueish;
+            margin-bottom: 32px;
+        }
+        &__text {
+            font-size: 18px;
+            color: $color-blueish-lighter;
+            max-width: 740px;
+            margin: auto;
+            padding: 0 15px;
+        }
+        &__grid {
+            padding: 50px 0 0 0;
+            justify-items: center;
+            display: grid;
+            grid-row-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            @media(max-width: 1200px) {
+                grid-template-columns: 1fr;
+                padding: 25px 0 0 0;
+            }
+            h4 {
+                font-size: 22px;
+                color: $color-blueish;
+                padding-top: 10px;
+            }
+            p {
+                font-size: 16px;
+                color: $color-blueish-lighter;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            &--img {
+                @media (max-width: 500px) {
+                    width: 70%;
+                }
+            }
+        }
+    }
+    
+    .get {
+        padding: 150px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        @media(max-width: 1200px) {
+            grid-template-columns: 1fr;
+            grid-row-gap: 25px;
+            padding: 150px 0 70px 0;
+        }
+        &__box {
+            min-height: 289px;
+            margin: 15px 0 0 0;
+            padding: 20px 23px;
+            box-shadow: 0px 50px 90px 0px $color-blueish-shadow-2;
+            @media(max-width: 1200px) {
+                grid-row: 2/3;
+            }
+            @media(max-width: 500px) {
+                min-height: 0px;
+                max-width: 250px;
+            }
+            @media(max-width: 319px) {
+                min-height: 0px;
+                max-width: 200px;
+            }
+        }
+        .persons {
+            max-width: 650px;
+            margin: 0 auto;
+            @media (max-width: 1200px) {
+                max-width: 450px;
+            }
+            @media(max-width: 500px) {
+                max-width: 244px;
+            }
+        }
+        &__two {
+            text-align: left;
+            max-width: 500px;
+            display: grid;
+            padding: 0 25px;
+            h2 {
+                font-size: 52px;
+                color: $color-blueish;
+                @media(max-width: 375px) {
+                    font-size: 35px;
+                }
+            }
+            @media(max-width: 1000px) {
+                grid-row: 1/2;
+            }
+            .text {
+                color: $color-blueish-lighter;
+                font-size: 17px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    
+    .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 26px;
+        padding: 0 14px;
+        @media(max-width: 500px) {
+            flex-direction: column;
+        }
+        &__text {
+            color: $color-blueish;
+            font-size: 20px;
+        }
+        &__num {
+            color: $color-blueish-lightest;
+            font-size: 20px;
+        }
+    }
+    
+    .person {
+        margin: 0 15px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important;
+        img {
+            width: 100%;
+            @media(max-width: 550px) {
+                margin: 0 auto;
+            }
+            @media(max-width:420px) {
+                width: auto;
+            }
+        }
+    }
+    
+    .cred {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .name {
+        text-align: left;
+        font-size: 16px;
+        color: $color-blueish;
+        margin: 10px 0 0 0;
+        @media(max-width: 500px) {
+            text-align: center;
+        }
+    }
+    
+    .position {
+        color: $color-blueish-lightest;
+        text-align: left;
+        font-size: 12px;
+        margin: 7px 0;
+        text-transform: uppercase;
+        @media(max-width: 500px) {
+            text-align: center;
+        }
+    }
