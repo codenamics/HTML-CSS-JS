@@ -1,0 +1,47 @@
+.header__btn,
+.btn-text,
+.card__btn,
+.form__btn {
+    padding: 1.8rem 3.5rem 1.8rem 3.5rem;
+    border: 1px solid $color-primary;
+    border-radius: 5.5rem;
+    color: $color-light-font;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+    &-custom {
+        background: $color-primary;
+    }
+    &:hover {
+        transform: translateY(-0.5rem);
+        -webkit-box-shadow: 0px 2px 22px 0px rgba($color-black, 0.75);
+        -moz-box-shadow: 0px 2px 22px 0px rgba($color-black, 0.75);
+        box-shadow: 0px 2px 22px 0px rgba($color-black, 0.75);
+        background: $color-primary;
+    }
+    &-anim {
+        animation: fromBottom 1.5s .2s;
+        animation-fill-mode: backwards;
+        &:active {
+            transform: translateY(-0.1rem);
+            -webkit-box-shadow: 0px 2px 13px 0px rgba($color-black, 0.75);
+            -moz-box-shadow: 0px 2px 13px 0px rgba($color-black, 0.75);
+            box-shadow: 0px 2px 13px 0px rgba($color-black, 0.75);
+        }
+    }
+    &--white {
+        background: $color-light-font;
+        color: $color-black;
+        border: none;
+        &:hover {
+            transform: translateY(-0.5rem);
+            -webkit-box-shadow: 0px 2px 22px 0px rgba($color-black, 0.75);
+            -moz-box-shadow: 0px 2px 22px 0px rgba($color-black, 0.75);
+            box-shadow: 0px 2px 22px 0px rgba($color-black, 0.75);
+            background: $color-light-font;
+        }
+    }
+}

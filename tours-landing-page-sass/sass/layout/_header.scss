@@ -1,0 +1,26 @@
+.header {
+    height: 98vh;
+    background-image: linear-gradient( to bottom, rgba($color-gradient-one, 0.302), rgba($color-gradient-two, 0.15)), url(../img/3.jpeg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 79vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 79vh, 0 100%);
+    position: relative;
+    background-blend-mode: screen;
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo {
+        height: 3.5rem;
+        width: auto;
+    }
+    &__heading-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
