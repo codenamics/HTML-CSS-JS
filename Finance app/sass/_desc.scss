@@ -1,0 +1,37 @@
+.desc {
+  padding: 100px 0 50px 0;
+  background: url(../img/RectangleCopy5.png);
+  margin: 0 -20px;
+  background-size: cover;
+  background-position: center;
+  @media (max-width: 992px) {
+    margin: 0;
+  }
+  @media (max-width: 576px) {
+    padding-top: 20px;
+  }
+  .iphone-app {
+    @media (min-width: 992px) {
+      transform: translateY(-120px);
+    }
+  }
+  .desc-dot {
+    border-radius: 50%;
+    background-image: linear-gradient(
+      -90deg,
+      rgb(62, 77, 222) 0%,
+      rgb(41, 57, 196) 100%
+    );
+    width: 10px;
+    height: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 10px 20px 0px rgba(15, 68, 255, 0.44);
+    @media (max-width: 992px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &--right {
+      margin-left: auto;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.clients {
+    min-height: 620px;
+    background: url(../img/clients.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border-radius: 4px;
+    &__row {
+        min-height: 150px;
+        margin-top: 28px;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .client__logo {
+        min-height: 90px;
+    }
+}
+
+.get__app {
+    padding: 60px 15px;
+    margin-top: -160px;
+    min-height: 250px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 59.622px 51.829px 114px 0px rgba(48, 52, 73, 0.13);
+    .view-price {
+        margin: 0 0 0 25px;
+        &--href {
+            color: #ff6866;
+        }
+    }
+}

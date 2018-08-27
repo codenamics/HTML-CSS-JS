@@ -1,0 +1,51 @@
+.btn {
+    &-main {
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(255, 104, 102);
+        width: 179px;
+        height: 54px;
+        @media (max-width: 576px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &--pricing {
+            border-width: 1px;
+            border-color: rgb(229, 229, 235);
+            border-style: solid;
+            border-radius: 4px;
+            width: 177px;
+            height: 52px;
+            color: #8491ae;
+            background: transparent;
+            &:hover {
+                background-color: rgb(255, 104, 102);
+                color: #fff;
+            }
+        }
+    }
+    &-second {
+        color: #fff;
+        border-radius: 4px;
+        background-color: rgb(45, 70, 201);
+        width: 220px;
+        height: 54px;
+        margin-left: 15px;
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border: none;
+        @media (max-width: 576px) {
+            width: 100%;
+            margin-left: 0;
+        }
+        img {
+            margin-right: 20px;
+        }
+    }
+    &:hover {
+        box-shadow: 0px 4px 64px 0px rgba(32, 38, 59, 0.15);
+    }
+}

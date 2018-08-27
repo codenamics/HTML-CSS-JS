@@ -1,0 +1,16 @@
+//Colors
+$color-black:#000;
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    position: relative;
+    margin: 20px 0;
+    padding: 0 20px;
+    background: #fff;
+    @media (max-width: 992px) {
+        margin: 0;
+        padding: 0 !important;
+    }
+}

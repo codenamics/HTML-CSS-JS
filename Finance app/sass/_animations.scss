@@ -1,0 +1,39 @@
+@keyframes fromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes Floating {
+    0% {
+        -webkit-transform: translateY(40px)
+    }
+    65% {
+        -webkit-transform: translate(0)
+    }
+    100% {
+        -webkit-transform: translateY(40px)
+    }
+}
+
+.anim__head {
+    animation-name: fromBottom;
+    animation-duration: 1s;
+    &--2 {
+        animation-duration: 1.8s;
+    }
+    &--3 {
+        animation-duration: 2s;
+    }
+}
+
+.floating {
+    animation-name: Floating;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+}

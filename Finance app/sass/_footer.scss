@@ -1,0 +1,24 @@
+.footer {
+    padding: 80px 0 100px 0;
+    &__list {
+        font-size: 14px;
+        &--head {
+            color: #404355;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        &--list {
+            li {
+                margin: 10px 0;
+            }
+        }
+    }
+    .text-muted {
+        font-size: 14px;
+        color: #8491ae;
+    }
+}
+
+.social {
+    margin: 0 15px;
+}

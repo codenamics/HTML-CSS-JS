@@ -1,0 +1,11 @@
+.about {
+    padding: 150px 0 70px 0;
+    @media (max-width: 767.98px) {
+        padding: 120px 0;
+    }
+    .container {
+        @media (min-width: 1200px) {
+            max-width: 1400px;
+        }
+    }
+}
