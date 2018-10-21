@@ -10,5 +10,4 @@ Credit for design: https://dribbble.com/shots/3251767-Mint-Landing-Page-2-0
 
     //build production
     npm run build:css
-    
-    live version http://codenamics.pl/mint/
+
